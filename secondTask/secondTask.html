@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="./secondTask.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Form validation</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card--microchip"></div>
+      <div class="card--visa_logo">
+        <img
+          src="./images/294654_visa_icon.png"
+          class="card--visa_logo--img"
+          alt="visa-logo"
+        />
+      </div>
+      <div class="card--card_number">
+        <p class="js--card_number">#### #### #### ####</p>
+      </div>
+      <div class="card--card_holder">
+        <h2>Card Holder</h2>
+        <p class="js--card_holder">Name Surname</p>
+      </div>
+      <div class="card--card_expires">
+        <h2>Expires</h2>
+        <p class="js--expires">YY/MM</p>
+      </div>
+    </div>
+    <div class="card-form">
+      <form action="#" aria-label="Card information">
+        <label for="">Card Number</label>
+        <br />
+        <input
+          type="text"
+          class="card-form__text-input"
+          id="card_number"
+          name="card-number"
+        />
+        <br />
+        <label for="">Card Holder</label>
+        <br />
+        <input
+          type="text"
+          class="card-form__text-input"
+          id="card_name"
+          name="card-name"
+        />
+        <br />
+        <label for="">Expirence Date</label>
+        <br />
+        <input type="month" id="expiration_date" name="expiration_date" />
+        <br />
+        <label for="">CVV</label>
+        <br />
+        <input
+          type="text"
+          class="card-form__text-input"
+          id="card_cvv"
+          name="card-cvv"
+        />
+        <br />
+        <button type="submit" class="js--submit submitBtn">Submit</button>
+      </form>
+    </div>
+    <script src="./secondTask.js"></script>
+  </body>
+</html>

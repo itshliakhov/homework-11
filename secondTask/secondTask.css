@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background: #d5e5fe;
+}
+.card {
+  position: relative;
+  z-index: 3;
+  left: 40rem;
+  top: 1rem;
+  width:  35rem;
+  height: 20rem;  
+  border-radius: 25px;
+  background: rgb(23, 189, 190);
+  background: -moz-linear-gradient(7deg, rgba(23, 189, 190, 1) 42%, rgba(0, 0, 0, 1) 100%);
+  background: -webkit-linear-gradient(7deg, rgba(23, 189, 190, 1) 42%, rgba(0, 0, 0, 1) 100%);
+  background: linear-gradient(7deg, rgba(23, 189, 190, 1) 42%, rgba(0, 0, 0, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#17bdbe", endColorstr="#000000", GradientType=1);
+}
+.card .card--microchip{
+  width: 4.5rem;
+  height: 3.4rem;
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  border-radius: 10px;
+  background: rgb(224, 229, 255);
+  background: -moz-radial-gradient(circle, rgba(224, 229, 255, 1) 0%, rgba(223, 223, 223, 1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(224, 229, 255, 1) 0%, rgba(223, 223, 223, 1) 100%);
+  background: radial-gradient(circle, rgba(224, 229, 255, 1) 0%, rgba(223, 223, 223, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e0e5ff", endColorstr="#dfdfdf", GradientType=1);
+}
+.card .card--visa_logo .card--visa_logo--img {
+  position: absolute;
+  right: 2rem;
+  bottom: 14.5rem;
+  width: 6rem;
+  height: 6rem;
+}
+.card .card--card_holder {
+  position: absolute;
+  bottom: 1rem;
+  left: 2rem;
+}
+.card .card--card_holder h2{
+  font-size: 12px;
+  color: rgb(26, 21, 21);
+}
+.card .card--card_holder p{
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+}
+.card .card--card_expires {
+  position: absolute;
+  bottom: 1rem;
+  right: 2.5rem;
+}
+.card .card--card_expires h2{
+  font-size: 12px;
+  color: rgb(26, 21, 21);
+}
+.card .card--card_expires p{
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+}
+.card .card--card_number{
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding-top: 9rem;
+  font-size: 21px;
+}
+.card-form{
+  display: flex;
+  position: relative;
+  padding: 0 1rem;
+  bottom: 5rem;
+  left: 35rem;
+  width: 45rem;
+  height: 45rem;
+  background: white;
+  border: 1px solid lightgray;
+  border-radius: 1rem;
+  padding-top: 10rem;
+}
+.card-form .card-form__text-input {
+  width: 40rem;
+  height: 2.5rem;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 1rem;
+}
+.card-form .submitBtn {
+  margin-top: 3rem;
+  width: 6rem;
+  height: 3rem;
+  font-size: 1.3rem;
+  border-radius: 2rem;
+  background: transparent;
+  transition: 0.3s all;
+}
+.card-form .submitBtn:hover{
+  background-color: rgba(19, 249, 127, 0.8);
+  font-size: 1.5rem;
+}
