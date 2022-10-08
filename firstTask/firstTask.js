@@ -1,6 +1,6 @@
-const todoBlock = document.querySelector(".js--todos__block");
-const todoInput = document.querySelector(".js--form__input");
 function TODOTasks() {
+  const todoBlock = document.querySelector(".js--todos__block");
+  const todoInput = document.querySelector(".js--form__input");
   this.completeTask = "js--completed";
   this.deleteTask = "js--delete";
   this.input = todoInput;
@@ -8,10 +8,8 @@ function TODOTasks() {
   this.addTodo = (event) => {
     event.preventDefault();
     const inputValue = this.input.value;
-    console.log(inputValue);
     this.input.value = "";
     const todoDescription = this.createTaskTemplate(inputValue);
-    console.log(todoDescription);
     this.todosBlock.insertAdjacentHTML("afterbegin", todoDescription);
 
     document.querySelectorAll(`.${this.completeTask}`).forEach((checkItem) => {
