@@ -31,10 +31,10 @@ function showFormInfo() {
 }
 function checkFormComplited() {
   if (
-    cardHolderInput === "" &&
-    cardNumberInput === "" &&
-    cardExpiresInput === "" &&
-    cardCvvInput === ""
+    cardHolderInput.value === "" &&
+    cardNumberInput.value === "" &&
+    cardExpiresInput.value === "" &&
+    cardCvvInput.value === ""
   ) {
     alert("Please fill out the form!");
   } else {
