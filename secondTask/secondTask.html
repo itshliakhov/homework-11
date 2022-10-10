@@ -34,7 +34,7 @@
       </div>
       <div class="card--card_expires">
         <h2>Expires</h2>
-        <p class="js--expires">YY/MM</p>
+        <p class="js--expires">MM/YY</p>
       </div>
     </div>
     <div class="card-form">
@@ -53,13 +53,19 @@
         <input
           type="text"
           class="card-form__text-input"
-          id="card_name"
-          name="card-name"
+          id="card_holder"
+          name="card-holder"
         />
         <br />
         <label for="">Expirence Date</label>
         <br />
-        <input type="month" id="expiration_date" name="expiration_date" />
+        <input
+          type="text"
+          class="card-form__text-input"
+          id="expiration_date"
+          name="expiration_date"
+          placeholder="Write your expiration date like MM/YY"
+        />
         <br />
         <label for="">CVV</label>
         <br />
@@ -71,6 +77,8 @@
         />
         <br />
         <button type="submit" class="js--submit submitBtn">Submit</button>
+      </form>
+    </div>
       </form>
     </div>
     <script src="./secondTask.js"></script>
